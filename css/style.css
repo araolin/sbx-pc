@@ -101,7 +101,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     _display: inline;
     height: 40px;
 }
-.topbar .topbar-cart a{
+.topbar .topbar-cart .cart-mini{
     position: relative;
     z-index: 32;
     display: block;
@@ -110,6 +110,27 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     text-align: center;
     color: #b0b0b0;
     background: #424242;
+}
+.topbar .cart-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    right: -1px \9;
+    top: 40px;
+    z-index: 31;
+    width: 316px;
+    padding: 15px 0 0;
+    color: #424242;
+    background: #fff;
+    border: 1px solid #e0e0e0 \9;
+    border-top: 0 \9;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.topbar .cart-menu .cart-menu-inner {
+    margin: 5px 20px 20px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* 头部 */
@@ -163,6 +184,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     padding-left: 4px;
 }
 .header-search .search-select-item {
+    display: none;
     width: 70px;
     height: 48px;
     border: 1px solid #dedede;
@@ -383,3 +405,145 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 #b04 .arrow { position: absolute; top: 148px;}
 #b04 #al { left: 15px;}
 #b04 #ar { right: 15px;}
+
+/* 商城公告 */
+.video-con{
+    margin-top:10px;
+    margin-bottom: 10px;
+    height: 380px;
+}
+.video-con .fl{
+    width: 480px;
+}
+.video-con .fl .notice h3{
+    width: 325px;
+    height: 65px;
+    background: url("../images/news-bg.png");
+}
+.video-con .fl .notice ul li{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    padding: 0 50px 0 12px;
+    overflow: hidden;
+}
+.video-con .fl i{
+    font-size: 16px;
+    color: #979797;
+    padding-right: 5px;
+}
+.video-con .fl em{
+    font-weight: 600;
+    padding-right: 5px;
+}
+.video-con .fl .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 24px;
+    color: #9BA0AD;
+}
+
+/* 品牌logo广告 */
+.AD-brands {
+    background: #f7f7f7;
+    padding: 13px 0 13px 11px;
+    margin-top: 20px;
+}
+.AD-brands ul {
+    height: 40px;
+    overflow: hidden;
+}
+.AD-brands li {
+    float: left;
+    width: 115px;
+    height: 40px;
+    border-left: 1px dotted #ccc;
+    text-align: center;
+}
+.AD-brands li img{
+    width:100px;
+    height: 40px;
+}
+/* 首页产品优选等层 */
+.floor{
+    width: 998px;
+    height: 325px;
+    margin-bottom: 10px;
+    border-top: 2px solid #84e1f2;
+}
+.floor img {
+    vertical-align: top;
+}
+.floor .side{
+    width: 477px;
+    height: 325px;
+    position: relative;
+    float: left;
+}
+.floor .side a img{
+    width: 477px;
+    height: 325px;
+}
+.floor .main{
+    position: relative;
+    float: left;
+    width: 520px;
+    height: 325px;
+    overflow: hidden;
+}
+.floor .p-list {
+    width: 520px;
+    height: 325px;
+    overflow: hidden;
+}
+.floor .p-list li{
+    float: left;
+    height: 155.5px;
+    padding: 6px 17px 0;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    overflow: hidden;
+    width: 138px;
+}
+.p-list .p-img {
+    height: 100px;
+    margin-bottom: 4px;
+    text-align: center;
+    padding-top: 5px;
+}
+.floor .p-list .p-name {
+    height: 20px;
+}
+.floor .p-list .p-price {
+    font-size: 12px;
+    font-family: Verdana;
+    color: #E4393C;
+    padding-bottom: 2px;
+}
+
+/* 底部 */
+.footer{
+    height: 155px;
+    width: 998px;
+    background: url("../images/footer-bg.jpg") no-repeat;
+}
+.footer .footer-inner{
+    margin: 35px 36px 0;
+    height: 120px;
+}
+.footer .footer-inner span{
+    display: block;
+}
+.footer .footer-inner .fl{
+    width: 280px;
+    text-align: right;
+    color: #fff;
+}
+.footer .footer-inner .fl h3{
+    font-size: 20px;
+}
+.footer .footer-inner .fr{
+    width: 600px;
+}
