@@ -281,6 +281,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     height: 44px;
     overflow: visible;
     background: #ffce28;
+    padding-bottom: 2px;
 }
 .nav .categorys .dt a {
     display: block;
@@ -294,10 +295,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     color: #fff;
     text-decoration: none;
 }
+.nav .categorys .dt i{
+    padding-left: 85px;
+    font-size: 12px;
+}
 .nav .categorys .dd {
     height:328px;
     background: #ffdf28;
     margin-top: 2px;
+}
+.nav .categorys .inner{
+    display: none;
 }
 .categorys .dd-inner .item {
     border-left: 1px solid #ffdf58;
@@ -352,6 +360,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     line-height: 44px;
     color: #333;
 }
+.navitems a.hover{
+    color: #ffce28;
+}
 .navitems a:hover{
     color: #ffce28;
 }
@@ -376,6 +387,23 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     margin: 10px 13px 0;
 }
 
+/* 顶部面包屑导航 */
+.breadcrumb {
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    z-index: 4;
+}
+.breadcrumb span {
+    color: #666;
+}
+.breadcrumb a {
+    color: #404040;
+}
+.breadcrumb .gt{
+    margin: 0 5px;
+    font-family: 'simsun';
+}
 /* 轮播 */
 .banner { margin-left:210px;position: relative; overflow: auto; text-align: center;}
 .banner li { list-style: none; }
@@ -466,6 +494,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     width:100px;
     height: 40px;
 }
+
 /* 首页产品优选等层 */
 .floor{
     width: 998px;
@@ -546,4 +575,33 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 }
 .footer .footer-inner .fr{
     width: 600px;
+}
+
+/* 文章内容CSS */
+.article-inner{
+    border: 1px solid #EBEBEB;
+    padding: 15px 30px 0;
+    margin-bottom: 15px;
+}
+.article-inner .mt {
+    padding-bottom: 2px;
+    position: relative;
+}
+.article-inner h3{
+    padding: 10px 0 15px;
+    margin-bottom: 10px;
+    height: 24px;
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+    line-height: 24px;
+    font-size: 20px;
+}
+.article-inner .summary {
+    text-align: center;
+    color: #999;
+}
+.article-inner .mc {
+    padding: 30px 10px;
+    font-size: 14px;
+    line-height: 2em;
 }

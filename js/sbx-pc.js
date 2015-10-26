@@ -32,5 +32,9 @@ $(function(){
             $(".dd-inner .item").find(".sub-item").hide();
         }
     );
-
+    $(".categorys").hover(function(){
+        $(".inner").show();
+    },function(){
+        $(".inner").hide();
+    })
 })
