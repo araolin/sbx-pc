@@ -231,7 +231,7 @@
             <div id="myplayer">
                 <!--酷播迷你 CuPlayerMiniV4.0 代码开始-->
                 <script type="text/javascript" src="js/swfobject.js"></script>
-                <div id="CuPlayer"><embed type="application/x-shockwave-flash" src="CuPlayerMiniV4.swf" width="480" height="340" id="ply" name="ply" bgcolor="#000000" quality="high" allowfullscreen="true" allowscriptaccess="always" wmode="opaque" salign="lt" flashvars="CuPlayerFile=images/Video.flv&amp;CuPlayerSetFile=CuPlayerSetFile.xml&amp;CuPlayerImage=images/start.jpg&amp;CuPlayerWidth=480&amp;CuPlayerHeight=340&amp;CuPlayerAutoPlay=yes&amp;CuPlayerPosition=bottom-right"></div>
+                <div id="CuPlayer"><embed type="application/x-shockwave-flash" src="CuPlayer/CuPlayerMiniV4.swf" width="480" height="340" id="ply" name="ply" bgcolor="#000000" quality="high" allowfullscreen="true" allowscriptaccess="always" wmode="opaque" salign="lt" flashvars="CuPlayerFile=images/Video.flv&amp;CuPlayerSetFile=CuPlayer/CuPlayerSetFile.xml&amp;CuPlayerImage=CuPlayer/images/start.jpg&amp;CuPlayerWidth=480&amp;CuPlayerHeight=340&amp;CuPlayerAutoPlay=yes&amp;CuPlayerPosition=bottom-right"></div>
                 <script type="text/javascript">
                     <!--
                     //酷播迷你：官方连播代码示例//
@@ -261,15 +261,15 @@
                         so.write("CuPlayer");
                     }
                     CuPlayerFile =sp[video_index];
-                    var so = new SWFObject("CuPlayerMiniV4.swf","ply","480","340","9","#000000");
+                    var so = new SWFObject("CuPlayer/CuPlayerMiniV4.swf","ply","480","340","9","#000000");
                     so.addParam("allowfullscreen","true");
                     so.addParam("allowscriptaccess","always");
                     so.addParam("wmode","opaque");
                     so.addParam("quality","high");
                     so.addParam("salign","lt");
                     so.addVariable("CuPlayerFile",CuPlayerFile);
-                    so.addVariable("CuPlayerSetFile","CuPlayerSetFile.xml"); //播放器配置文件地址
-                    so.addVariable("CuPlayerImage","images/start.jpg");//视频略缩图,本图片文件必须正确
+                    so.addVariable("CuPlayerSetFile","CuPlayer/CuPlayerSetFile.xml"); //播放器配置文件地址
+                    so.addVariable("CuPlayerImage","CuPlayer/images/start.jpg");//视频略缩图,本图片文件必须正确
                     so.addVariable("CuPlayerWidth","480"); //视频宽度
                     so.addVariable("CuPlayerHeight","340"); //视频高度
                     so.addVariable("CuPlayerAutoPlay","no"); //是否自动播放
@@ -279,7 +279,7 @@
                 </script>
                 <!--酷播迷你 CuPlayerMiniV4.0 代码结束-->
             </div>
-            <div><img src="images/video-bg.jpg" alt="视频底部背景"></div>
+            <div><img src="CuPlayer/images/bottom-bg.jpg" alt="视频底部背景"></div>
         </div>
     </div>
     <div class="floor container">
