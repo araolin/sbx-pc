@@ -32,9 +32,29 @@ $(function(){
             $(".dd-inner .item").find(".sub-item").hide();
         }
     );
+
     $(".categorys").hover(function(){
         $(".inner").show();
     },function(){
         $(".inner").hide();
-    })
-})
+    });
+
+    //搜索结果上下箭头js有误
+    $(".f-sort a").click(function(){
+        $(".f-sort a").removeClass("curr");
+        $(this).addClass("curr");
+        if($(this).children().hasClass("icon")){
+            if(($(this).children().html()=="") || ($(this).children().html()=="&#xe608;")){
+                $(this).children().html("&#xe607;");
+            }else{
+                $(this).children().html("&#xe608;");
+            };
+        }else{
+            $(".f-sort a .icon").html("");
+        }
+
+    });
+
+});
+
+
