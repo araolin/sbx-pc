@@ -26,6 +26,12 @@ button, input, select, textarea {
     overflow: hidden;
     _zoom: 1;
 }
+.price {
+    color: #D00;
+    font-family: Tahoma;
+    font-weight: 700;
+}
+
 /*谷歌*/
 input:-webkit-autofill {
     background-color:#fff;
@@ -835,6 +841,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     border-color: #e4393c;
 }
 .filter .f-sort a i {
+    display: none;
     overflow: hidden;
 
 }
@@ -984,8 +991,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     margin-right: 15px;
     display: inline-block;
     vertical-align: top;
-    color: #dc0000;
-    font-weight: bold;
 }
 .show-info .sale .icon-bg {
     background-color: #ffce28;
@@ -1437,8 +1442,257 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     overflow: hidden;
     word-break: break-all;
 }
-.recomm-list ul li .price {
-    color: #D00;
-    font-family: Tahoma;
+
+/* 商品图文详情 */
+.product-detail .main{
+    float: right;
+    width: 760px;
+    _overflow: hidden;
+    _position: relative;
+    _z-index: 2;
+}
+.product-detail .tab-area{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    width: 760px;
+}
+.product-detail .tab-area .tab{
+    position: relative;
+    z-index: 4;
+    height: 31px;
+    border-bottom: 3px solid #ffce28;
+}
+.product-detail .tab-area .tab a {
+    background-color: #f7f7f7;
+    border-right: 1px solid #fff;
+    color: #3e2916;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 13px;
+    position: relative;
+    z-index: 3;
+}
+.product-detail .tab-area .tab .on {
+    background-color: #ffce28;
+    border-color: #ffce28;
+    cursor: default;
+    font-weight: bold;
+    z-index: 100;
+    color: #fff;
+}
+.pro-connent,.pro-comment{
+    border: solid #f5f5f5;
+    border-width: 0 1px 1px 1px;
+    margin: 0 0 20px;
+    width: 758px;
+    overflow: hidden;
+}
+.pro-connent .pro-parameter{
+    padding: 15px 0;
+}
+.pro-connent .pro-parameter .parameter-inner{
+    float: left;
+    line-height: 22px;
+    overflow: hidden;
+    color: #666;
+    width: 33%;
+    text-indent: 22px;
+}
+.pro-connent .pro-detail-pics{
+    width: 720px;
+    margin: 0 auto;
+}
+.pro-connent .pro-detail-pics img{
+    width: 740px;
+}
+
+.aside {
+    float: left;
+    width: 220px;
+}
+.aside .aside-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.aside .aside-box .aside-box-t{
+    height: 28px;
+    line-height: 28px;
+    background-color: #f7f7f7;
+    border: 1px solid #f5f5f5;
+}
+.aside .aside-box .aside-box-t h3{
+    padding: 0 8px;
+    font-weight: 400;
+}
+.aside-box-t h3 span{
+    padding-left: 80px;
+}
+.aside .aside-box-c{
+    border: 1px solid #f5f5f5;
+    border-top: none;
+}
+.aside .aside-box-c .view-all-products{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.aside-box-c dl{
+    padding-left: 20px;
+}
+.aside-box-c dd{
+    padding-left:30px;
+}
+.aside-box-c dt{
+    font-weight: bold;
+}
+.aside-box-c dt i {
+    padding-right: 5px;
+    color: #a6a6b2;
+    cursor: pointer;
+}
+.aside-box-c dt i.hide{
+    display: none;
+}
+.aside-box-c ul{
+    overflow: hidden;
+    font-size: 12px;
+}
+.aside-box-c li {
+    position: relative;
+    padding: 10px 0;
+    margin: 1px 10px -1px;
+    border-bottom: solid 1px #EEE;
+}
+.aside-box-c .p-img img{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+}
+.aside-box-c .p-name{
+    height: 36px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+.aside-box-c .p-price{
+    height: 22px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 产品详情评论 */
+.pro-comment{
+    margin-top: 10px;
+    display: none;
+}
+.pro-comment .pro-comment-head{
+    position: relative;
+}
+.pro-comment .pro-comment-tabs {
+    border: 1px solid #ddd;
+    zoom: 1;
+    height: 29px;
+}
+.pro-comment .pro-comment-tabs li {
+    border-top: 1px solid #ddd;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.pro-comment .pro-comment-tabs li.on {
+    border-top: 3px solid #f60;
+    position: relative;
+    _overflow: hidden;
+}
+.pro-comment-tabs a, .pro-comment-tabs a:visited {
+    color: #333;
+    display: inline-block;
+}
+.pro-comment .pro-comment-tabs li p {
+    display: inline-block;
+    _display:inline; _zoom:1;
+    height: 29px;
+    line-height: 28px;
+    padding: 0 20px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.pro-comment .pro-comment-tabs li.on p {
+    height: 27px;
+    line-height: 25px;
     font-weight: 700;
+    color: #f70;
+    cursor: default;
+}
+.pro-comment .pro-comment-tabs li p span {
+    color: #999;
+}
+.pro-comment .pro-comment-tbas li.on p span {
+    font-weight: 400;
+    color: #f70;
+}
+.pro-comment-body{
+    width: 738px;
+    padding: 15px 0 0 20px;
+    background: #fff;
+    margin: 0;
+}
+.pro-comment-items{
+    width: 723px;
+    padding: 10px 0 0;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 0;
+}
+.pro-comment-items .items-l {
+    float: left;
+    width: 110px;
+}
+.pro-comment-items .items-l .fl-pic{
+    width: 70px;
+    position: relative;
+}
+.pro-comment-items .items-l .fl-pic img {
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+    border: 1px solid #cfcfcf;
+}
+.pro-comment-items .items-l .username{
+    color: #a3a3a3;
+    line-height: 18px;
+    padding-top: 6px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.pro-comment-items .items-r .items-star{
+    color: #ffce28;
+}
+.pro-comment-items .items-r .items-detail {
+    width: 480px;
+    line-height: 22px;
+    font-size: 12px;
+    position: relative;
+    word-break: break-all;
+    word-wrap: break-word;
+    max-height: none;
+    _height: auto;
+    overflow: hidden;
+}
+.pro-comment-items .items-r .items-line{
+    width: 610px;
+    font-size: 12px;
+    color: #999;
+    height: 46px;
+    line-height: 46px;
+    border-top: 0;
 }

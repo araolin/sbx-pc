@@ -39,20 +39,42 @@ $(function(){
         $(".inner").hide();
     });
 
-    //ËÑË÷½á¹ûÉÏÏÂ¼ıÍ·jsÓĞÎó
+    /* æœç´¢ç»“æœä»·æ ¼æ’åº */
     $(".f-sort a").click(function(){
         $(".f-sort a").removeClass("curr");
         $(this).addClass("curr");
-        if($(this).children().hasClass("icon")){
-            if(($(this).children().html()=="") || ($(this).children().html()=="&#xe608;")){
-                $(this).children().html("&#xe607;");
-            }else{
-                $(this).children().html("&#xe608;");
-            };
+        if($(this).children().hasClass("icon") && $(this).find(".up").is(":hidden")){
+           $(this).find(".up").show();$(this).find(".down").hide();
         }else{
-            $(".f-sort a .icon").html("");
+            $(this).find(".up").hide();$(this).find(".down").show();
         }
+    });
 
+    /* äº§å“è¯¦æƒ…ä¾§æ åº—é“ºåˆ†ç±» */
+    $(".aside-box-c dt i").click(function(){
+        if($(this).hasClass("hide")){
+            $(this).hide();
+            $(this).siblings().show();
+            $(this).parent().siblings().show();
+        }else{
+            $(this).hide();
+            $(this).siblings().show();
+            $(this).parent().siblings().hide();
+        }
+    });
+
+    /* äº§å“å±•ç¤ºä¸è¯„è®ºtabsåˆ‡æ¢ */
+    $("#comment_tab").click(function(){
+        $(this).addClass("on");
+        $("#detail_tab").removeClass("on");
+        $(".pro-connent").hide();
+        $(".pro-comment").show();
+    });
+    $("#detail_tab").click(function(){
+        $(this).addClass("on");
+        $("#comment_tab").removeClass("on");
+        $(".pro-connent").show();
+        $(".pro-comment").hide();
     });
 
 });
