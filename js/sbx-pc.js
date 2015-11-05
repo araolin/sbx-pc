@@ -77,6 +77,27 @@ $(function(){
         $(".pro-comment").hide();
     });
 
+    /* 个人中心侧栏 开始 */
+    $(".home-nav dt i.m").click(function(){
+        $(this).hide();
+        $(this).siblings().show();
+        $(this).parent().siblings().hide();
+    });
+    $(".home-nav dt i.p").click(function(){
+        $(this).hide();
+        $(this).siblings().show();
+        $(this).parent().siblings().show();
+    });
+    $(".home-nav dl a").click(function(){
+        $(".home-nav dl a").removeClass("hover");
+        $(this).addClass("hover");
+    });
+
+    /* 头像hover显示编辑头像 */
+    $(".user-photo-inner a").hover(function(){
+        $(".user-photo-inner .edit-box").toggle();
+    });
+
 });
 
 
