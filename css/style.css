@@ -532,12 +532,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     height: 325px;
     overflow: hidden;
 }
-.floor .p-list {
+.floor .p-list,.might-like .p-list {
     width: 520px;
     height: 325px;
     overflow: hidden;
 }
-.floor .p-list li{
+.floor .p-list li,.might-like .p-list li{
     float: left;
     height: 155.5px;
     padding: 6px 17px 0;
@@ -546,16 +546,16 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     overflow: hidden;
     width: 138px;
 }
-.floor .p-list .p-img {
+.floor .p-list .p-img ,.might-like .p-list .p-img{
     height: 100px;
     margin-bottom: 4px;
     text-align: center;
     padding-top: 5px;
 }
-.floor .p-list .p-name {
+.floor .p-list .p-name,.might-like .p-list .p-name {
     height: 20px;
 }
-.floor .p-list .p-price {
+.floor .p-list .p-price,.might-like .p-list .p-price {
     font-size: 12px;
     font-family: Verdana;
     color: #E4393C;
@@ -1856,3 +1856,38 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     padding-left: 10px;
     text-align: right;
 }
+
+/* 个人中心猜你喜欢 开始 */
+.home .might-like{
+    width: 100%;
+    margin-top: 10px;
+    border-top:2px solid #ffce28;
+}
+.might-like .inner-head{
+    height: 40px;
+    line-height: 40px;
+    background-color: #fafafa;
+}
+.might-like .inner-head h3{
+    font-weight: 700;
+    padding-left: 16px;
+}
+.might-like .inner-head span{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.might-like .inner-head span i{
+    padding-right: 3px;
+}
+.might-like .inner-con{
+    margin-left: 1px;
+}
+.might-like .p-list{
+    width: 760px;
+    border-left: 1px solid #ededed;
+}
+.might-like .p-list li{
+    width: 154.5px;
+}
+
+/*个人中心猜你喜欢 结束*/
