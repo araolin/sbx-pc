@@ -2179,7 +2179,7 @@ span.ftx-03, span.ftx03 {
 }
 /*我的订单 结束*/
 
-/* 我的订单，购物车等为空提示 开始*/
+/* 我的订单，我的收藏，购物车等为空提示 开始*/
 .tips-empty{
     text-align: center;
     padding: 10px 20px 20px;
@@ -2190,3 +2190,9 @@ span.ftx-03, span.ftx03 {
     color: #dddddd;
 }
 /* 我的订单，购物车等为空提示 结束*/
+
+/* 我的收藏 开始 */
+.wish-list .p-list li{
+    width: 223px;
+}
+/*我的收藏 结束*/
