@@ -534,7 +534,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 }
 .floor .p-list,.might-like .p-list {
     width: 520px;
-    height: 325px;
     overflow: hidden;
 }
 .floor .p-list li,.might-like .p-list li{
@@ -788,6 +787,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     height: 32px;
     line-height: 32px;
     text-align: center;
+    color:#ccc;
     margin: 0 8px 0 3px;
 }
 .pages div {
@@ -1883,9 +1883,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .might-like .inner-head span i{
     padding-right: 3px;
 }
-.might-like .inner-con{
-    margin-left: 1px;
-}
 .might-like .p-list{
     width: 760px;
     border-left: 1px solid #ededed;
@@ -2186,7 +2183,7 @@ span.ftx-03, span.ftx03 {
 /* 我的订单，我的收藏，购物车等为空提示 开始*/
 .tips-empty{
     text-align: center;
-    padding: 10px 20px 20px;
+    padding: 25px 20px 80px;
 }
 .tips-empty .tips-icon{
     font-size: 70px;
@@ -2200,3 +2197,19 @@ span.ftx-03, span.ftx03 {
     width: 223px;
 }
 /*我的收藏 结束*/
+
+/*我的足迹 开始*/
+.home .history-inner{
+    border-top: 0 none;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.history-inner .inner-head{
+    border: 1px solid #ededed;
+}
+.history-inner .inner-head span i {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+/*我的足迹 结束*/
