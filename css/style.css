@@ -2178,3 +2178,15 @@ span.ftx-03, span.ftx03 {
     display: none;
 }
 /*我的订单 结束*/
+
+/* 我的订单，购物车等为空提示 开始*/
+.tips-empty{
+    text-align: center;
+    padding: 10px 20px 20px;
+}
+.tips-empty .tips-icon{
+    font-size: 70px;
+    padding:20px 0;
+    color: #dddddd;
+}
+/* 我的订单，购物车等为空提示 结束*/

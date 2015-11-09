@@ -98,9 +98,11 @@ $(function(){
         $(".user-photo-inner .edit-box").toggle();
     });
 
+    /* 我的订单 删除 */
     $(".order-tb tbody").hover(function(){
         $(this).find(".tr-th .order-del").toggle();
     });
+
 });
 
 
