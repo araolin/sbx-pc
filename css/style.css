@@ -588,6 +588,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 }
 
 /* 文章列表 */
+.article-list-inner{
+    border: 1px solid #ebebeb;
+}
 .article-list h5{
     height: 38px;
     line-height: 38px;
@@ -783,8 +786,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .pages .ellipsis {
     width: 17px;
     height: 32px;
+    line-height: 32px;
+    text-align: center;
     margin: 0 8px 0 3px;
-    background-repeat: no-repeat;
 }
 .pages div {
     margin-left: 22px;
