@@ -98,6 +98,9 @@ $(function(){
         $(".user-photo-inner .edit-box").toggle();
     });
 
+    $(".order-tb tbody").hover(function(){
+        $(this).find(".tr-th .order-del").toggle();
+    });
 });
 
 
