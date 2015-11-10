@@ -2213,3 +2213,82 @@ span.ftx-03, span.ftx03 {
     font-size: 18px;
 }
 /*我的足迹 结束*/
+
+/* 收货地址 开始 */
+.address-list{
+    width:100%;
+}
+.address-list .address-item,.address-list .address-item-add{
+    width: 366px;
+    height: 156px;
+    background: url("../images/addr-bg.jpg") no-repeat;
+    float: left;
+    margin: 0 14px 14px 0;
+}
+.address-list .addr-inner{
+    padding: 11px 15px;
+}
+.address-list .addr-inner .addr-hd{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 0 5px;
+    margin-bottom: 2px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.address-list .addr-inner .addr-hd span {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.address-list .addr-inner .addr-hd em{
+    background-color: #ffce28;
+    padding: 2px 4px;
+    font-size: 12px;
+    color: #fff;
+}
+.address-list .addr-inner .addr-hd a{
+    padding: 2px 4px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.address-list .addr-inner .addr-con li{
+    margin-right: 3px;
+    width:285px;
+    color: #666;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.address-list .addr-inner .addr-con .addr-detail{
+    height: 42px;
+    overflow: hidden;
+}
+.address-list .addr-inner .addr-con li.addr-btn{
+    display: none;
+    width:100%;
+    float: right;
+}
+.address-list .addr-inner .addr-con li.addr-btn a{
+    font-size: 20px;
+    padding-left: 5px;
+    color: #DD0000;
+}
+.address-item-add .add-inner{
+    text-align: center;
+    padding: 40px 0;
+    color: #DD0000;
+}
+.address-item-add .add-inner span{
+    line-height: 40px;
+    font-size: 40px;
+}
+.address-item-add .add-inner p{
+    padding-top: 10px;
+}
+/* 收货地址 结束 */

@@ -103,6 +103,11 @@ $(function(){
         $(this).find(".tr-th .order-del").toggle();
     });
 
+    /* 收货地址 */
+    $(".address .address-item").hover(function(){
+        $(this).find(".addr-con .addr-btn").toggle();
+    });
+
 });
 
 
