@@ -2295,7 +2295,7 @@ span.ftx-03, span.ftx03 {
 /* 收货地址 结束 */
 
 /*购物车 开始*/
-.cart-inner .cart-title{
+.cart-inner .cart-title,.confirm-addr .confirm-addr-t,.select-pay-type .pay-type-t{
     height: 44px;
     margin-top: 4px;
     line-height: 44px;
@@ -2325,6 +2325,7 @@ span.ftx-03, span.ftx03 {
     font-family: simsun;
 }
  .cart-box-title {
+     width: 998px;
     cursor: default;
     padding: 12px 0 10px 0;
     border-top: 2px solid #ffce28;
@@ -2696,3 +2697,102 @@ q.snPrice i, q.snPrice em {
     font-style: normal;
 }
 /*购物车 结束*/
+
+/*确认订单 开始*/
+.confirm-addr .address-item{
+    background: url("../images/confirm-addr-bg.png") no-repeat;
+    background-position:0 -135px;
+    cursor: pointer;
+    width: 315px;
+    height: 132px;
+    z-index: 2;
+    position: relative;
+}
+.confirm-addr .addr-active,.confirm-addr .addr-hover{
+    background-position:0 0;
+}
+.confirm-addr .address-item ins{
+    z-index: 3;
+    position: absolute;
+    font-size: 36px;
+    color: #b00002;
+    top: 96px;
+    right: -0.5px;
+    _top: 97px;
+    _right: 3px;
+    visibility: visible;
+    text-decoration: none;
+    display: none;
+}
+.confirm-addr .addr-active ins{
+    display: block;
+}
+.addr-switch {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 5px 20px 5px 0;
+    cursor: pointer;
+}
+.select-new-addr{
+    float: right;
+    color: #333;
+    height: 25px;
+    width: 140px;
+    line-height: 25px;
+    _margin-top:5px;
+}
+.select-new-addr a{
+    background: #f7f0ea;
+    border-radius: 3px;
+    color: #c49172;
+    text-align: center;
+    padding: 6px 14px;
+}
+.select-pay-type li{
+    webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:140px;
+    padding: 6px 10px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    border-radius: 2px;
+    color: #4d525d;
+    line-height: 23px;
+    background-color: #f8f8f8;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.select-pay-type li.hover{
+    padding: 5px 8px;
+    border: 2px solid #ffce28;
+}
+.select-pay-type li ins {
+    z-index: 3;
+    position: absolute;
+    font-size: 18px;
+    color: #ffce28;
+    top: 15px;
+    right: -1px;
+    _top: 16px;
+    _right: -1px;
+    visibility: visible;
+    text-decoration: none;
+    display: none;
+}
+.select-pay-type li.hover ins{
+    display: block;
+}
+.confirm-order .cart-list-amount{
+    text-align: center;
+    color: #666;
+}
+.confirm-order .cart-list-behavior span{
+    position: relative;
+    top: 10px;
+    right: -10px;
+}
+/*确认订单 结束*/
