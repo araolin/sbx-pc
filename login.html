@@ -89,8 +89,7 @@
             <p class="lost-password">
                 <a href="lostpassword.html">忘记密码？</a>
             </p>
-            <div style="clear: both;"></div>
-            <!--登陆-->
+            <div style="clear: both;"></div>            <!--登陆-->
             <p class="btn">
                 <input type="submit" value="登&nbsp;录">
             </p>
@@ -125,9 +124,12 @@
         // validate signup form on keyup and submit
         $("#signupForm").validate({
             errorPlacement:function(error,element) {
-                error.appendTo(element.parent().next(".tips:eq(0)")),
-                        error.appendTo(element.parent().parent().next(".tips:eq(0)"))
-                ;
+                if(element.hasClass("codes")){
+                    error.appendTo(element.parent().parent().next(".tips:eq(0)"));
+                }
+                else{
+                    error.appendTo(element.parent().next(".tips:eq(0)"));
+                }
             },
             rules: {
                 phone: {
