@@ -2932,3 +2932,18 @@ q.snPrice i, q.snPrice em {
     cursor: pointer;
 }
 /*登陆 结束*/
+
+/* 注册 开始 */
+.register .get-code{
+    height: 38px;
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ff2832;
+    padding:0 18px;
+}
+.register a.get-code,.register a.get-code:hover{
+    color: #fff;
+}
+/*注册 结束*/

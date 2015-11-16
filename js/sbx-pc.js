@@ -152,9 +152,8 @@ $(function(){
         },
         blur:function(){
             $(this).parent().removeClass("focus");
-        },
+        }
     });
-
 
 
 });
