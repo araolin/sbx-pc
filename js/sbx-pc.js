@@ -145,6 +145,18 @@ $(function(){
         $(this).addClass("hover");
     });
 
+    //登陆页
+    $('.login input').bind({
+        focus:function(){
+            $(this).parent().addClass("focus");
+        },
+        blur:function(){
+            $(this).parent().removeClass("focus");
+        },
+    });
+
+
+
 });
 
 
