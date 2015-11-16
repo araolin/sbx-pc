@@ -2079,7 +2079,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .order-tb .deal-state-cont {
     position: relative;
     z-index: 10;
-    width: 98px;
+    width: 108px;
     cursor: pointer;
 }
 .order-tb .deal-state-cont .state-txt {
@@ -2091,16 +2091,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     padding-right: 12px;
     border: 1px solid #f5f5f5;
 }
-.order-tb .deal-state-cont .state-txt b {
-    position: absolute;
-    width: 7px;
-    height: 4px;
-    right: 18px;
-    top: 13px;
-    overflow: hidden;
-    vertical-align: middle;
-    background: url(//misc.360buyimg.com/user/myjd-2015/css/i/order-icon20150916.png) -37px -207px no-repeat;
-}
 .order-tb .deal-state-cont .state-list {
     position: absolute;
     left: 0;
@@ -2111,6 +2101,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     background: #fff;
     border: 1px solid #f5f5f5;
     border-top: 0;
+}
+.order-tb .ordertime-cont .time-list .curr,.order-tb .deal-state-cont .state-list .curr{
+    color: #ffce28;
 }
 .order-tb .sep-row {
     height: 15px;
