@@ -155,6 +155,10 @@ $(function(){
         }
     });
 
+    /* 头部购物车删除商品 */
+    $(".topbar .cart-item ").hover(function(){
+        $(this).find(".btn-del").toggle();
+    });
 
 });
 
