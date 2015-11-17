@@ -3114,3 +3114,83 @@ q.snPrice i, q.snPrice em {
     border: 1px solid #ddd;
 }
 /* 新增收货地址 结束 */
+
+/* 物流跟踪 开始 */
+.order-track{
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+.order-track-l{
+    float:left;
+}
+.order-track-r{
+    padding-top:10px;
+}
+.order-track-l img{
+    padding: 10px;
+    height: 80px;
+    width: auto;
+}
+.order-track-r span {
+    display: block;
+    color: #6e6e6e;
+    line-height: 24px;
+}
+.order-track-r .track-status{
+    font-size: 16px;
+    color:#222;
+    padding-bottom: 6px;
+}
+.order-track-r .track-status em{
+    color: #009a44;
+}
+.track-detail{
+    background-color: #fff;
+    overflow: hidden;
+}
+.track-detail .track-detail-con{
+    margin:20px;
+    padding:10px 20px 25px;
+    border-left: 1px solid #e8e5e5;
+    position: relative;
+    overflow: initial;
+}
+.track-detail i.icon{
+    position: absolute;
+    left: -9px;
+    _left: -29px;
+    top: -10px;
+    font-size: 16px;
+    color: #e8e5e5;
+}
+.track-detail ul li{
+    font-size: 12px;
+    color:#6e6e6e;
+    padding: 13px 10px;
+    border-bottom: 1px dotted #e8e5e5;
+    position: relative;
+}
+.track-detail ul li p{
+    padding-top: 10px;
+    font-size: 10px;
+    color: #ddd;
+}
+.track-detail ul li .icon{
+    top:30px;
+    left: -27px;
+    _left: -38px;
+    font-size: 14px;
+    color: #e8e5e5;
+    position: absolute;
+}
+.track-detail ul .selected span,.track-detail ul .selected p{
+    color: #ffce28;
+}
+.track-detail ul .selected .icon{
+    font-size: 16px;
+    left: -28px;
+    _left: -38px;
+}
+
+/* 物流跟踪 结束 */
