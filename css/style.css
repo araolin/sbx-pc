@@ -2131,6 +2131,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .order-tb .tr-th td {
     border-bottom-color: #f5f5f5;
 }
+.order-tb tbody td {
+    border: 1px solid #e5e5e5;
+}
 .order-tb .tr-th span {
     float: left;
     height: 18px;
@@ -2178,6 +2181,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 }
 .order-tb .tr-bd td {
     padding: 14px 0;
+}
+.order-tb tbody td {
+    border: 1px solid #e5e5e5;
 }
 .order-tb .goods-item {
     display: inline-block;
@@ -3205,7 +3211,7 @@ q.snPrice i, q.snPrice em {
     color: #ffce28;
 }
 .form-item .area{
-    width: 400px;
+    width: 500px;
     height: 100px;
     padding: 3px 5px;
     border: 1px solid #BBB;
@@ -3215,24 +3221,3 @@ q.snPrice i, q.snPrice em {
     overflow: auto;
 }
 /*订单评价 结束*/
-
-/* 余额、积分、佣金通用 开始 */
-.wallet-h{
-    background-color: #f5f5f5;
-}
-.wallet-h .wallet-h-inner{
-    padding: 30px 20px;
-}
-.wallet-h-inner .fl .price{
-    font-size: 18px;
-}
-.wallet-h-inner .operation a{
-    margin-right: 28px;
-    width: 118px;
-    height: 38px;
-    line-height: 38px;
-}
-.wallet-c .order-tb tbody td{
-    border: 0 none;
-}
-/* 余额、积分、佣金通用 结束 */
