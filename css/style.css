@@ -3060,7 +3060,7 @@ q.snPrice i, q.snPrice em {
     border: 1px solid #BBB;
     color: #BBB;
 }
-.addr-item .sele{
+.addr-item .sele,.form-item .sele{
     line-height: 18px;
     border: 1px solid #ccc;
     padding: 3px 5px;
@@ -3072,7 +3072,7 @@ q.snPrice i, q.snPrice em {
     height: 30px;
     line-height: 30px;
 }
-.addr-item .row{
+.addr-item .row,.form-item .row{
     width: 308px;
     margin-top: 10px;
 }
@@ -3294,3 +3294,59 @@ q.snPrice i, q.snPrice em {
     height: 310px;
 }
 /*商家店铺 结束*/
+
+/*我的资料 开始*/
+.form-item dd span.no-input{
+    line-height: 26px;
+    font-size: 12px;
+}
+.gender .sex-label input {
+    width: 12px;
+    float: left;
+    margin-top: 7px;
+}
+.gender .sex-label span {
+    float: left;
+    border: 0 none;
+    margin: 5px 20px 0 5px;
+}
+.profile-avatar {
+    float: left;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border: 5px solid #e3e3e3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-avatar img {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    display: block;
+    border-radius: 50%;
+}
+.profile-avatar a {
+    position: absolute;
+    font-size: 12px;
+    left: -5px;
+    top: 90px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    color: #FFF;
+    z-index: 2;
+}
+.profile-avatar .edit_bg {
+    position: absolute;
+    left: -5px;
+    top: 88px;
+    width: 120px;
+    height: 25px;
+    font-size: 0;
+    opacity: .5;
+    z-index: 1;
+    background: #000;
+    filter: alpha(opacity=50);
+}
+/*我的资料 结束*/
