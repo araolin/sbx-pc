@@ -3190,10 +3190,12 @@ q.snPrice i, q.snPrice em {
 
 /* 订单评价 开始 */
 .comment .form-item dt{
-    width: 55px;
+    width: 80px;
+    _width:85px;
 }
 .comment .operation {
-    margin: 10px 0 0 55px;
+    margin: 10px 0 0 80px;
+    _margin: 10px 0 0 85px;
 }
 .form-item .i-star{
     font-size: 16px;

@@ -264,7 +264,14 @@
                 <div style="clear: both;"></div>
                 <div class="comment-tb">
                     <dl class="form-item">
-                        <dt><em>*</em>评分：</dt>
+                        <dt><em>*</em>店铺评分：</dt>
+                        <dd class="i-star">
+                            <i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i>
+                        </dd>
+                        <div style="clear: both;"></div>
+                    </dl>
+                    <dl class="form-item">
+                        <dt><em>*</em>产品评分：</dt>
                         <dd class="i-star">
                             <i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i><i class="icon">&#xe60b;</i>
                         </dd>
@@ -349,7 +356,7 @@
 <script type="text/javascript">
     $(function(){
         $(".i-star i").click(function(){
-            $(".i-star i").css("color","#ffce28");
+            $(this).siblings().css("color","#ffce28");
             $(this).css("color","#ffce28");
             $(this).nextAll().css("color","#ccc");
         })
