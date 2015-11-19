@@ -3350,3 +3350,52 @@ q.snPrice i, q.snPrice em {
     filter: alpha(opacity=50);
 }
 /*我的资料 结束*/
+
+/*我的分销 开始*/
+.distribution-h{
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+.distribution-h-inner{
+    padding: 12px 0 12px 10px;
+}
+.distribution-h-inner input{
+    margin-right: 5px;
+    vertical-align: -2px;
+}
+.distribution-h-inner a.del-btn{
+    margin-left: 40px;
+}
+.distribution-c li{
+    border-bottom: 1px solid #e7e7e7;
+}
+.distribution-item{
+    height: 120px;
+    margin-top: 20px;
+}
+.distribution-item .check{
+    vertical-align: top;
+    margin-left: 10px;
+    float: left;
+}
+.distribution-item .p-img{
+    margin:0 20px;
+    float: left;
+}
+.distribution-item .p-img img{
+    width: 100px;
+    height: 100px;
+}
+.distribution-item .p-name{
+    width: 400px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    _overflow: visible;
+}
+.distribution-item .price{
+    float: left;
+    height: 100px;
+    width: 125px;
+}
+/*我的分销 结束*/
