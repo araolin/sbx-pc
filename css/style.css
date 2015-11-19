@@ -645,10 +645,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     text-align: center;
     padding-top: 5px;
 }
-.floor .p-list .p-name,.might-like .p-list .p-name {
+.floor .p-list .p-name,.might-like .p-list .p-name,.shop-plist .p-list .p-name {
     height: 20px;
 }
-.floor .p-list .p-price,.might-like .p-list .p-price {
+.floor .p-list .p-price,.might-like .p-list .p-price,.shop-plist .p-list .p-price {
     font-size: 12px;
     font-family: Verdana;
     color: #E4393C;
@@ -3218,8 +3218,6 @@ q.snPrice i, q.snPrice em {
 }
 /*订单评价 结束*/
 
-/*订单评价 结束*/
-
 /* 余额、积分、佣金通用 开始 */
 .wallet-h{
     background-color: #f5f5f5;
@@ -3240,3 +3238,59 @@ q.snPrice i, q.snPrice em {
     border: 0 none;
 }
 /* 余额、积分、佣金通用 结束 */
+
+/*商家店铺 开始*/
+.shop-head{
+    height: 100px;
+    background-color: #fefff3;
+    margin: 8px 0;
+}
+.shop-head .shop-info{
+    padding:5px 10px 5px;
+}
+.shop-head .shop-logo {
+    width: 190px;
+    height: 90px;
+    border-right: 1px solid #dcdcdc;
+}
+.shop-head .shop-logo img{
+    margin: 5px 0;
+    width: 180px;
+    height: 80px;
+}
+.shop-head .shop-info-detail{
+    padding:5px 0 0 20px;
+}
+.shop-head .shop-name{
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 5px;
+}
+.shop-head .items-star{
+    color: #999;
+}
+.shop-head .items-star i{
+    margin-left:-4px;
+    color: #ffce28;
+}
+.shop-plist{
+    width: 998px;
+    margin-top: 30px;
+}
+.shop-plist .p-list li{
+    float: left;
+    width: 155px;
+    height: 160px;
+    padding: 6px 20px 0;
+}
+.shop-plist .p-list li .p-img {
+    height: 100px;
+    margin-bottom: 4px;
+    text-align: center;
+    padding-top: 5px;
+}
+.shop-banner img{
+    width: 998px;
+    height: 310px;
+}
+/*商家店铺 结束*/
