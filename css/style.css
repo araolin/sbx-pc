@@ -3400,7 +3400,7 @@ q.snPrice i, q.snPrice em {
 }
 /*我的分销 结束*/
 
-/* 我的团队 */
+/* 我的团队  开始*/
 .myteam-header{
     margin: 10px 0 30px;
     background-color: #fafafa;
@@ -3490,3 +3490,36 @@ q.snPrice i, q.snPrice em {
     font-size: 12px;
     color: #999;
 }
+/*我的团队 结束*/
+
+/*我要开店 开始*/
+.form-item .upload-img-box{
+    display: inline-block;
+    display: block;
+}
+.form-item .upload-img-box li {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f0f0f0;
+    margin-right: 10px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+.form-item .upload-img-box .add-img-btn {
+    float: left;
+    height: 58px;
+    line-height: 58px;
+    width: 58px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.form-item .upload-img-box .add-img-btn b{
+    line-height: 60px;
+    font-size: 20px;
+    color: #969696;
+}
+/*我要开店 结束*/
