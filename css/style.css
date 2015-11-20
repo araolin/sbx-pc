@@ -2830,7 +2830,7 @@ q.snPrice i, q.snPrice em {
     text-align: center;
     padding: 6px 14px;
 }
-.select-pay-type li{
+.select-pay-type li,.select-bank li,.select-bank .new-bank{
     webkit-box-sizing: border-box;
     box-sizing: border-box;
     width:140px;
@@ -2847,11 +2847,11 @@ q.snPrice i, q.snPrice em {
     position: relative;
     z-index: 2;
 }
-.select-pay-type li.hover{
+.select-pay-type li.hover,.select-bank li.hover{
     padding: 5px 8px;
     border: 2px solid #ffce28;
 }
-.select-pay-type li ins {
+.select-pay-type li ins,.select-bank li ins {
     z-index: 3;
     position: absolute;
     font-size: 18px;
@@ -2864,7 +2864,7 @@ q.snPrice i, q.snPrice em {
     text-decoration: none;
     display: none;
 }
-.select-pay-type li.hover ins{
+.select-pay-type li.hover ins,.select-bank li.hover ins{
     display: block;
 }
 .confirm-order .cart-list-amount{
@@ -3743,3 +3743,24 @@ li.search-shop-li div{
     color: #fff;
 }
 /* 收益排行榜 结束 */
+
+/* 我要提现 开始 */
+.select-bank li{
+    float: none;
+    width: 320px;
+    margin-bottom: 10px;
+}
+.select-bank .new-bank{
+    border-style: dashed;
+    display: block;
+    width: 320px;
+    float: none;
+}
+.select-bank .new-bank a{
+    color: #ffce28;
+}
+.select-bank .new-bank i{
+    margin-right: 4px;
+    color: #c3c3c3;
+}
+/*我要提现 结束*/

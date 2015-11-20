@@ -160,6 +160,13 @@ $(function(){
         $(this).find(".btn-del").toggle();
     });
 
+    //选择支付方式
+    $(".select-bank li").click(function(){
+        $(".select-bank li").removeClass("hover");
+        $(this).addClass("hover");
+    });
+    
+
 });
 
 
