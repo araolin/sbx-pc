@@ -165,7 +165,7 @@ $(function(){
         $(".select-bank li").removeClass("hover");
         $(this).addClass("hover");
     });
-    
+
 
 });
 
