@@ -3399,3 +3399,94 @@ q.snPrice i, q.snPrice em {
     width: 125px;
 }
 /*我的分销 结束*/
+
+/* 我的团队 */
+.myteam-header{
+    margin: 10px 0 30px;
+    background-color: #fafafa;
+}
+.myteam-header .myteam-header-info{
+    padding: 20px 0;
+    height: 70px;
+}
+.myteam-header .myteam-header-info img{
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    float:left;
+
+}
+.myteam-header .myteam-header-info span{
+    font-size: 16px;
+    padding-top: 10px;
+    display: block;
+}
+.myteam-header .myteam-header-info em,.myteam .team-overview li{
+    font-size: 12px;
+    color: #999;
+}
+.myteam .team-overview li{
+    float: left;
+    margin-right: 10px;
+}
+.myteam .team-overview li i{
+    color: #DD0000;
+    font-style: normal;
+}
+.myteam-list{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.myteam-list .arrow_d b{
+    float: right;
+    margin-right: 15px;
+    color: #ff0000;
+}
+.myteam-list .arrow_d i{
+    float: right;
+    margin-right: 10px;
+    line-height: 48px;
+}
+.myteam-list .arrow_d .icon-u{
+    display: none;
+}
+.myteam-list .title {
+    height: 48px;
+    line-height: 48px;
+    text-indent: 10px;
+    color: #4d525d;
+    background-color: #fff;
+}
+.myteam-list li{
+    border-top:1px solid #ddd;
+    padding:10px 0;
+}
+.myteam-list .head-pic{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 10px;
+    float: left;
+}
+.myteam-list  .head-pic img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 30px;
+}
+.myteam-list .user-name {
+    display: block;
+    color: #333;
+    font-size: 12px;
+    margin-right: 1px;
+}
+.myteam-list .follow-time{
+    font-size: 12px;
+    color: #999;
+}
