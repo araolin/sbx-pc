@@ -166,6 +166,10 @@ $(function(){
         $(this).addClass("hover");
     });
 
+    /* 我的银行卡 */
+    $(".bank .address-item").hover(function(){
+        $(this).find(".addr-con .addr-btn").toggle();
+    });
 
 });
 
