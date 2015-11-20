@@ -3402,7 +3402,7 @@ q.snPrice i, q.snPrice em {
 
 /* 我的团队  开始*/
 .myteam-header{
-    margin: 10px 0 30px;
+    margin-bottom: 30px;
     background-color: #fafafa;
 }
 .myteam-header .myteam-header-info{
@@ -3691,3 +3691,55 @@ li.search-shop-li div{
     position: relative;
 }
 /*我的推广 结束*/
+
+/* 收益排行榜 开始 */
+.ranking .ranking-con{
+    margin:auto 10px;
+}
+.ranking-con ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.ranking-con ul li img{
+    width: 50px;
+    height: 50px;
+    float:left;
+}
+.ranking-con .ranking-detail{
+    float:left;
+    padding-left: 10px;
+}
+.ranking-con .ranking-detail span{
+    display: block;
+    font-size: 12px;
+    color: #999999;
+}
+.ranking-con .ranking-detail span:first-child{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+}
+.ranking-con .ranking-detail span em{
+    color: #ff0000;
+}
+.ranking-con .ranking-num{
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #666;
+    float:right;
+    display: block;
+    margin-top:16px;
+}
+.ranking-con .ranking-list{
+    overflow: hidden;
+}
+.ranking-con .ranking-list i.r123{
+    background-color: #ff0000;
+    color: #fff;
+}
+/* 收益排行榜 结束 */
